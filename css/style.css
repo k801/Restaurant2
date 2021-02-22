@@ -1,3 +1,6 @@
+.container-fluid{
+    padding:0px;
+}
 .main-header{
     background-image: url("../images/download (1).jpg");
     height: 500px;
@@ -5,12 +8,12 @@
     background-repeat: no-repeat;
     background-size:cover;
     background-position:center center;
-    /* background-attachment: fixed; */
 }
 
 .nav-item{
     padding: 15px;
 }
+
 .navbar-dark{
     background-color: black
 }
@@ -22,8 +25,12 @@
 
 .text-center h1{
     margin-top: 2em;
-    color:rgb(192, 7, 8);
+    color:#FFF;
     font-size: 100px;
+}
+
+.text-center .my-title{
+    color:rgb(192, 7, 8); 
 }
 
 .header-title{
@@ -31,11 +38,11 @@
     position: absolute;
     top:30px;
     font-weight: 700;
-
-color:white;
+    color:white;
     left: 50%;
     top: 40%;
 }
+
 .text-center p{
     font-size: 26px;
     color:#fefefe;
@@ -43,6 +50,10 @@ color:white;
 
 .container button{
     background-color: orange;
+}
+
+.container .my-btn{
+    background-color: blueviolet;
 }
 
 .container h2{
@@ -56,10 +67,11 @@ color:white;
   .reservations h1{
       font-weight: 700;
   }
-  /* .card img{
+
+  .card .my-img{
       width:253px;
       height:167px;
-  } */
+  }
 
   .dot {
     height: 15px;
@@ -73,16 +85,16 @@ color:white;
       background-color: blueviolet;
   }
 
-  .subscribe{
+  .subscribe ,.slash{
       margin-bottom: -20px;
       background-color:#9e9a9a;
   }
 
-  .subscribe span{
+  .subscribe span,.slash span{
    font-size: 40px;
   }
 
-  .subscribe p{
+  .subscribe p,.slash p{
     font-size: 22px;
    }
 
@@ -90,18 +102,18 @@ color:white;
     border:3px solid blueviolet;
    }
 
-   .subscribe button{
-    /* background-color: blueviolet; */
+   .subscribe .my-btn{
+    background-color: blueviolet;
     font-size: 20px;
     width:60px;
    }
 
-footer{
+ footer{
     background-image: url("../images/bg5.png");
     background-repeat: no-repeat;
     background-size: cover;
     height: 350px;
-}
+ }
 
 footer h3,footer h6,.con i{
     color:blueviolet;
@@ -140,7 +152,7 @@ footer span,.con p{
 }
 
 .features{
-    height: 100vh;
+    height: 120vh;
     background-image:url('../images/bg5.png');
     background-repeat: no-repeat;
     background-size: cover;
@@ -183,9 +195,7 @@ element.style {
 .reservations input{
     margin-bottom: 20px;
 }
-.slash{
-    background-color: #ccc;
-}
+
 .slash input{
     display: inline-block;
 }
